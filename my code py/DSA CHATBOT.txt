@@ -1,0 +1,89 @@
+# Comprehensive Placement Knowledge Base: DSA & SQL
+
+## Section 1: Algorithmic Efficiency
+* **Time Complexity:** Measures the time an algorithm takes to run based on the input size.
+* **Space Complexity:** Measures the extra memory an algorithm uses during execution.
+* **O(1) Constant Time:** The algorithm takes the same time regardless of data size (e.g., accessing an array index).
+* **O(log n) Logarithmic Time:** The input data is halved at each step, highly efficient (e.g., Binary Search).
+* **O(n) Linear Time:** The algorithm looks at every item in the input exactly once.
+* **O(n log n) Linearithmic Time:** The standard time complexity for efficient sorting algorithms like Merge Sort.
+* **O(n^2) Quadratic Time:** Usually indicates nested loops; inefficient for large datasets.
+
+## Section 2: Arrays and Strings
+
+* **Array Definition:** A collection of items stored at contiguous memory locations, allowing for instant access via indices.
+* **Static Arrays:** Have a fixed size defined at the time of creation.
+* **Dynamic Arrays:** Automatically resize themselves when they reach capacity.
+* **Array Complexities:** Access is $O(1)$. Search is $O(n)$. Insertion or deletion in the middle is $O(n)$ due to shifting elements.
+* **Two Pointers Technique:** Using two indices to traverse an array from different ends, useful for reversing or finding pairs.
+* **Sliding Window Technique:** Maintaining a subset of items in a window that slides over the array, used for subarray problems.
+
+## Section 3: Linked Lists
+
+* **Linked List Definition:** A linear structure where elements (Nodes) are scattered in memory, connected by pointers.
+* **Singly Linked List:** Each node points only to the next node in the sequence.
+* **Doubly Linked List:** Each node points to both the next and the previous nodes.
+* **Circular Linked List:** The last node points back to the first node, creating a loop.
+* **Linked List Complexities:** Search and Access are $O(n)$ because you must traverse from the head. Insertion and Deletion at a known node are $O(1)$.
+
+## Section 4: Stacks and Queues
+
+* **Stack Concept:** Operates on the LIFO (Last In, First Out) principle. You only add or remove from the top.
+* **Stack Applications:** Used for reversing strings, valid parenthesis checking, and tracking recursive function calls.
+* **Queue Concept:** Operates on the FIFO (First In, First Out) principle. You add to the back and remove from the front.
+* **Queue Applications:** Used for printer task scheduling and Breadth-First Search (BFS) in graphs.
+* **Complexities:** Push/Enqueue and Pop/Dequeue operations are all $O(1)$ when implemented correctly.
+
+## Section 5: Trees and Graphs
+
+* **Binary Tree:** A hierarchical data structure where each node has at most two children.
+* **Binary Search Tree (BST):** A tree where the left child is strictly smaller than the parent, and the right child is strictly larger.
+* **Tree Traversals:** In-order (Left-Root-Right) gives sorted output in a BST. Pre-order is Root-Left-Right. Post-order is Left-Right-Root.
+* **Graph Definition:** A non-linear structure consisting of Vertices (nodes) connected by Edges. Can contain cycles.
+
+* **Graph Traversal (BFS):** Explores all immediate neighbors first, utilizing a Queue.
+* **Graph Traversal (DFS):** Goes as deep as possible down one path before backtracking, utilizing a Stack or recursion.
+
+## Section 6: Advanced Algorithms and Data Structures
+
+* **Hash Tables:** Uses a Hash Function to map keys to array indices for $O(1)$ average lookups. Collisions are often handled via Chaining (linked lists).
+* **Sorting (Merge Sort):** Divides the array until single elements remain, then merges them in order. Time complexity is $O(n \log n)$.
+* **Searching (Binary Search):** Repeatedly divides a sorted array in half to find a target. Time complexity is $O(\log n)$.
+* **Dynamic Programming (DP):** An optimization technique that breaks down problems into overlapping subproblems and stores the results to avoid redundant calculations.
+
+## Section 7: Database Fundamentals (DBMS & RDBMS)
+* **DBMS Concept:** Software to store, retrieve, and manage data efficiently.
+* **RDBMS Concept:** Stores data in structured tables (rows and columns) that relate to each other. Standard examples are MySQL, PostgreSQL, and Oracle.
+* **SQL:** Structured Query Language, the standard tool used to communicate with an RDBMS.
+
+## Section 8: SQL Command Categories
+* **DDL (Data Definition Language):** Defines the database structure. Includes CREATE (make new tables), ALTER (modify structure), DROP (delete table), and TRUNCATE (empty table).
+* **DML (Data Manipulation Language):** Manages the data inside tables. Includes INSERT (add rows), UPDATE (modify rows), and DELETE (remove rows).
+* **DCL (Data Control Language):** Manages security and permissions, including GRANT and REVOKE.
+* **TCL (Transaction Control Language):** Manages database transactions, including COMMIT (save) and ROLLBACK (undo).
+
+## Section 9: Database Keys and Constraints
+* **Primary Key:** Uniquely identifies each record. Cannot be NULL, and values must be completely unique.
+* **Foreign Key:** A column that links to the Primary Key of another table, creating the relationship between them.
+* **UNIQUE Constraint:** Ensures all values in a column are different, but allows one NULL value.
+* **NOT NULL Constraint:** Ensures a column must always contain a value.
+
+## Section 10: SQL Querying and Joins
+
+
+[Image of SQL Joins Venn Diagram]
+
+* **SELECT and WHERE:** Used to fetch specific columns based on logical filtering conditions.
+* **INNER JOIN:** Returns only the records that have matching values in both tables being joined.
+* **LEFT JOIN:** Returns all records from the left table, plus matched records from the right table (unmatched right side will be NULL).
+* **RIGHT JOIN:** Returns all records from the right table, plus matched records from the left table.
+* **Aggregate Functions:** Perform calculations on multiple rows: COUNT(), SUM(), AVG(), MAX(), MIN().
+* **GROUP BY and HAVING:** GROUP BY organizes identical data into summaries. HAVING filters those summaries after the aggregation is complete.
+
+## Section 11: ACID Properties and Normalization
+
+* **Atomicity:** A transaction either fully completes or fully fails. No partial saves.
+* **Consistency:** The database remains in a valid state before and after any transaction.
+* **Isolation:** Concurrent transactions do not interfere with one another.
+* **Durability:** Once committed, a transaction is permanent, even during a system failure.
+* **Normalization:** The process of organizing database columns and tables to eliminate duplicate data and improve integrity. Progresses from 1NF up to 3NF and beyond.
